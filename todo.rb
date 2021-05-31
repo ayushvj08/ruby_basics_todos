@@ -21,15 +21,15 @@ class Todo < ActiveRecord::Base
     puts "My Todo-list\n\n"
 
     puts "Overdue\n"
-    puts overdue.map { |todo| todo.to_displayable_string }
+    puts overdue.to_displayable_list
     puts "\n\n"
 
     puts "Due Today\n"
-    puts due_today.map { |todo| todo.to_displayable_string }
+    puts due_today.to_displayable_list
     puts "\n\n"
 
     puts "Due Later\n"
-    puts due_later.map { |todo| todo.to_displayable_string }
+    puts due_later.to_displayable_list
     puts "\n\n"
   end
 
